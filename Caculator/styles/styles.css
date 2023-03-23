@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.calc {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(13, 0, 31);
+  font-size: 4rem;
+}
+
+.screen {
+  width: 300px;
+  height: 70px;
+  border: 1px solid pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+.screen .display {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3rem;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 300px;
+}
+.keyboard .items {
+  height: 70px;
+  border: 0.1px solid pink;
+}
+.keyboard .item1 {
+  grid-column: 1/span 2;
+}
+.keyboard .item19 {
+  background-color: pink;
+}
+
+.items:hover {
+  background-color: pink;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
