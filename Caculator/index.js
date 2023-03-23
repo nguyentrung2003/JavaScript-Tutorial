@@ -11,7 +11,9 @@ itemsBtn.forEach((btn) => {
             display.innerHTML = '0';
         }else if(btn.innerHTML == 'DEL') {
             let arrtext = Array.from(display.innerHTML);
+            console.log(arrtext)
             arrtext.splice(arrtext.length - 1,1);
+            // console.log(arrtext)
             if(arrtext.length != 0) {
                 display.innerHTML = arrtext.join('')
             }else {
